@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# brew install ariga/tap/atlas
+
 cd "$(dirname "$0")"
 
 atlas schema apply \
