@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  api-service-postgres:
+    image: postgres
+    restart: always
+    hostname: postgres
+    environment:
+      POSTGRES_USER: jt
+      POSTGRES_PASSWORD: jt
+      POSTGRES_DB: jt
+    ports:
+      - "5435:5432"
+    volumes:
+      - './var/postgres:/var/lib/postgresql/data'
+
